@@ -1,0 +1,38 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+
+#endif
+
+#ifdef build_configuration
+
+#if build_configuration == 1 // Debug Mode
+#define MyLog(...) NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#endif
+
+#if build_configuration == 2 // AppStore Mode
+#define MyLog(...) do { } while (0)
+#endif
+
+#if build_configuration == 3 // AdHoc Mode
+#define MyLog(...) do { } while (0)
+#endif
+
+#else // Default to same as AppStore Mode
+#define MyLog(...) do { } while (0)
+#endif
+
+#define kUrl							@"www.cestunmac.com"
