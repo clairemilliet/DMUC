@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BA15B641803586100A7942A /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA15B631803586100A7942A /* Post.m */; };
+		2BA15B671803586200A7942A /* PostCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA15B661803586200A7942A /* PostCategory.m */; };
+		2BA15B6A1803586200A7942A /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA15B691803586200A7942A /* Attachment.m */; };
 		443F7CF21801C8CA00C28D27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443F7CF11801C8CA00C28D27 /* Foundation.framework */; };
 		443F7CF41801C8CA00C28D27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443F7CF31801C8CA00C28D27 /* CoreGraphics.framework */; };
 		443F7CF61801C8CA00C28D27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443F7CF51801C8CA00C28D27 /* UIKit.framework */; };
@@ -24,9 +27,6 @@
 		443F7D211801C8CA00C28D27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 443F7D1F1801C8CA00C28D27 /* InfoPlist.strings */; };
 		443F7D231801C8CA00C28D27 /* DMUCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F7D221801C8CA00C28D27 /* DMUCTests.m */; };
 		443F7D301801CA9E00C28D27 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 443F7D2E1801CA9E00C28D27 /* Model.xcdatamodeld */; };
-		443F7D331801CC2300C28D27 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F7D321801CC2300C28D27 /* Post.m */; };
-		443F7D361801CC2400C28D27 /* PostCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F7D351801CC2400C28D27 /* PostCategory.m */; };
-		443F7D391801CC2400C28D27 /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F7D381801CC2400C28D27 /* Attachment.m */; };
 		443F7D3C1801CC6800C28D27 /* DMUCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F7D3B1801CC6800C28D27 /* DMUCContext.m */; };
 		443F7D3E1801CD2800C28D27 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443F7D3D1801CD2800C28D27 /* CoreData.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BA15B621803586100A7942A /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Shared/Model/Post.h; sourceTree = "<group>"; };
+		2BA15B631803586100A7942A /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Shared/Model/Post.m; sourceTree = "<group>"; };
+		2BA15B651803586200A7942A /* PostCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostCategory.h; path = Shared/Model/PostCategory.h; sourceTree = "<group>"; };
+		2BA15B661803586200A7942A /* PostCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostCategory.m; path = Shared/Model/PostCategory.m; sourceTree = "<group>"; };
+		2BA15B681803586200A7942A /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Attachment.h; path = Shared/Model/Attachment.h; sourceTree = "<group>"; };
+		2BA15B691803586200A7942A /* Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Attachment.m; path = Shared/Model/Attachment.m; sourceTree = "<group>"; };
 		443F7CEE1801C8CA00C28D27 /* DMUC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMUC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443F7CF11801C8CA00C28D27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		443F7CF31801C8CA00C28D27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,12 +71,6 @@
 		443F7D201801C8CA00C28D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		443F7D221801C8CA00C28D27 /* DMUCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMUCTests.m; sourceTree = "<group>"; };
 		443F7D2F1801CA9E00C28D27 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		443F7D311801CC2300C28D27 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Shared/Model/Post.h; sourceTree = "<group>"; };
-		443F7D321801CC2300C28D27 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Shared/Model/Post.m; sourceTree = "<group>"; };
-		443F7D341801CC2400C28D27 /* PostCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostCategory.h; path = Shared/Model/PostCategory.h; sourceTree = "<group>"; };
-		443F7D351801CC2400C28D27 /* PostCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostCategory.m; path = Shared/Model/PostCategory.m; sourceTree = "<group>"; };
-		443F7D371801CC2400C28D27 /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Attachment.h; path = Shared/Model/Attachment.h; sourceTree = "<group>"; };
-		443F7D381801CC2400C28D27 /* Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Attachment.m; path = Shared/Model/Attachment.m; sourceTree = "<group>"; };
 		443F7D3A1801CC6800C28D27 /* DMUCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMUCContext.h; path = Shared/DMUCContext.h; sourceTree = "<group>"; };
 		443F7D3B1801CC6800C28D27 /* DMUCContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMUCContext.m; path = Shared/DMUCContext.m; sourceTree = "<group>"; };
 		443F7D3D1801CD2800C28D27 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -193,12 +193,12 @@
 			isa = PBXGroup;
 			children = (
 				443F7D2E1801CA9E00C28D27 /* Model.xcdatamodeld */,
-				443F7D371801CC2400C28D27 /* Attachment.h */,
-				443F7D381801CC2400C28D27 /* Attachment.m */,
-				443F7D341801CC2400C28D27 /* PostCategory.h */,
-				443F7D351801CC2400C28D27 /* PostCategory.m */,
-				443F7D311801CC2300C28D27 /* Post.h */,
-				443F7D321801CC2300C28D27 /* Post.m */,
+				2BA15B681803586200A7942A /* Attachment.h */,
+				2BA15B691803586200A7942A /* Attachment.m */,
+				2BA15B651803586200A7942A /* PostCategory.h */,
+				2BA15B661803586200A7942A /* PostCategory.m */,
+				2BA15B621803586100A7942A /* Post.h */,
+				2BA15B631803586100A7942A /* Post.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -301,15 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443F7D391801CC2400C28D27 /* Attachment.m in Sources */,
 				443F7D0E1801C8CA00C28D27 /* SecondViewController.m in Sources */,
-				443F7D361801CC2400C28D27 /* PostCategory.m in Sources */,
-				443F7D331801CC2300C28D27 /* Post.m in Sources */,
 				443F7D021801C8CA00C28D27 /* AppDelegate.m in Sources */,
+				2BA15B6A1803586200A7942A /* Attachment.m in Sources */,
+				2BA15B641803586100A7942A /* Post.m in Sources */,
 				443F7D301801CA9E00C28D27 /* Model.xcdatamodeld in Sources */,
 				443F7D0B1801C8CA00C28D27 /* FirstViewController.m in Sources */,
 				443F7D3C1801CC6800C28D27 /* DMUCContext.m in Sources */,
 				443F7CFE1801C8CA00C28D27 /* main.m in Sources */,
+				2BA15B671803586200A7942A /* PostCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
