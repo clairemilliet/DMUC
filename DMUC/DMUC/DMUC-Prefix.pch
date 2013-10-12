@@ -35,4 +35,4 @@
 #define MyLog(...) do { } while (0)
 #endif
 
-#define kUrl							@"www.cestunmac.com"
+#define kUrl							@"dessinemoiunecitation.com"
